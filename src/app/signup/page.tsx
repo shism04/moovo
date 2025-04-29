@@ -126,7 +126,7 @@ export default function SignUp() {
                 placeholder="Nombre"
                 value={form.firstName}
                 onChange={handleChange}
-                className={`w-full border p-2 rounded-md focus:outline-none ${formErrors.firstName ? 'border-red-500' : 'border-gray-400'}`}
+                className={`w-full border p-2 rounded-md focus:outline-none ${formErrors.firstName ? 'border-red-500' : 'border-gray-400 focus:border-blue-500'}`}
               />
               {formErrors.firstName && (
                 <p className="text-red-500 text-xs">{formErrors.firstName}</p>
@@ -139,7 +139,7 @@ export default function SignUp() {
                 placeholder="Apellido"
                 value={form.lastName}
                 onChange={handleChange}
-                className={`w-full border p-2 rounded-md focus:outline-none ${formErrors.lastName ? 'border-red-500' : 'border-gray-400'}`}
+                className={`w-full border p-2 rounded-md focus:outline-none ${formErrors.lastName ? 'border-red-500' : 'border-gray-400 focus:border-blue-500'}`}
               />
               {formErrors.lastName && (
                 <p className="text-red-500 text-xs">{formErrors.lastName}</p>
@@ -153,7 +153,7 @@ export default function SignUp() {
               placeholder="Correo electrónico"
               value={form.email}
               onChange={handleChange}
-              className={`w-full border p-2 rounded-md focus:outline-none ${formErrors.email ? 'border-red-500' : 'border-gray-400'}`}
+              className={`w-full border p-2 rounded-md focus:outline-none ${formErrors.email ? 'border-red-500' : 'border-gray-400 focus:border-blue-500'}`}
             />
             {formErrors.email && (
               <p className="text-red-500 text-xs">{formErrors.email}</p>
@@ -166,7 +166,7 @@ export default function SignUp() {
               placeholder="Contraseña"
               value={form.password}
               onChange={handleChange}
-              className={`w-full border p-2 rounded-md focus:outline-none ${formErrors.password ? 'border-red-500' : 'border-gray-400'}`}
+              className={`w-full border p-2 rounded-md focus:outline-none ${formErrors.password ? 'border-red-500' : 'border-gray-400 focus:border-blue-500'}`}
             />
             {formErrors.password && (
               <p className="text-red-500 text-xs">{formErrors.password}</p>
@@ -179,7 +179,7 @@ export default function SignUp() {
               placeholder="Confirmar contraseña"
               value={form.confirmPassword}
               onChange={handleChange}
-              className={`w-full p-2 rounded-md border focus:outline-none ${formErrors.confirmPassword ? 'border-red-500' : 'border-gray-400'}`}
+              className={`w-full p-2 rounded-md border focus:outline-none ${formErrors.confirmPassword ? 'border-red-500' : 'border-gray-400 focus:border-blue-500'}`}
             />
             {formErrors.confirmPassword && (
               <p className="text-red-500 text-xs">{formErrors.confirmPassword}</p>

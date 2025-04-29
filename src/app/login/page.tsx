@@ -75,7 +75,7 @@ export default function Login() {
             placeholder="Correo electrónico"
             value={form.email}
             onChange={handleChange}
-            className="w-full border border-gray-400 p-2 rounded-md focus:outline-none"
+            className="w-full border border-gray-400 p-2 rounded-md focus:outline-none focus:border-blue-500"
           />
           <input
             type="password"
@@ -83,11 +83,11 @@ export default function Login() {
             placeholder="Contraseña"
             value={form.password}
             onChange={handleChange}
-            className="w-full border border-gray-400 p-2 rounded-md focus:outline-none"
+            className="w-full border border-gray-400 p-2 rounded-md focus:outline-none focus:border-blue-500"
           />
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white p-2 rounded-md transition active:scale-95 hover:bg-blue-600"
+            className="w-full bg-blue-500 text-white p-2 rounded-md transition active:scale-95 hover:bg-blue-600 focus:border-blue-500"
             >
             Iniciar sesión
           </button>
